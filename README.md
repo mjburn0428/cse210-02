@@ -6,3 +6,11 @@
 
 ### function
 1. The init function inherit all the objects from deck.py script. 
+
+2. display function will perform the logic which will prompt for user input, read random value and do conditional check as in userInputCheck
+
+3. userInputCheck, will read userinput and set the score value based on "h - High" and "l - Lower" parameters and then return the score to     display
+
+### To use this funtion
+Python 3
+
