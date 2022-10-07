@@ -11,6 +11,6 @@
 
 3. userInputCheck, will read userinput and set the score value based on "h - High" and "l - Lower" parameters and then return the score to     display
 
-### To use this funtion
-Python 3
+### To use this script
+Python 3 deck.py
 
