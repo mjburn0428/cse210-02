@@ -1,7 +1,7 @@
 "Hilo Game Week 03"
 "Class: CSE210 BYU-I"
-"Authors: Joe Burner Chelsea Chngh, Shaun Vann; "
-# Please add your name next to mine when collrabrating.
+"Authors: Joe Burner Chelsea Chngh, Shaun Vann;"
+#Please add your name to authors.
 
 from Director import Director
 from Director import Deck
@@ -15,11 +15,11 @@ while keep_playing == 'y':
 
     
 
-    guess = input('Higher or lower? [h/l] ').lower()
+    guess = input('Guess Higher or Lower? [h/l] ').lower()
 
     print("\t\t\t     ____________________")
     print("\t\t\t                         ")  
-    print("\t\t\t     The Next Card was {}".format(card_deck[1]))   
+    print("\t\t\t     Your next card was {}".format(card_deck[1]))   
     print("\t\t\t     ____________________")
     print("\t\t\t                         ") 
 
@@ -27,22 +27,22 @@ while keep_playing == 'y':
 
     if guess == 'h' and (card_deck[1] > card_deck[0]):
         deck.award_points()
-        print("Your score is plus 100 now!")
+        print("Congratulations you won 100 points.")
     elif guess == 'h' and (card_deck[1] < card_deck[0]):
         deck.deduct_points()
-        print("Your score is minus 75 now!")
+        print("Bummer, you lost 75 points.")
     elif guess == 'l' and (card_deck[1] < card_deck[0]):
         deck.award_points()
-        print("Your score is plus 100 now!")
+        print("Yay! You earned 100 points!")
     elif guess == 'l' and (card_deck[1] > card_deck[0]):
         deck.deduct_points()
-        print("Your score is minus 75 now!")
+        print("Better luck next time! You lost 75 points!")
     elif guess == 'h' and (card_deck[1] == card_deck[0]):
         deck.deduct_points()
-        print(" Your score is minus 75 now!")
+        print("You lost 75 points! Get em next time!")
     elif guess == 'l' and (card_deck[1] == card_deck[0]):
         deck.deduct_points()
-        print("Your score is minus 75 now!")
+        print("Boo you lost 75 points! Good luck next time!")
 
 
     card_deck.clear()
@@ -59,6 +59,6 @@ while keep_playing == 'y':
         keep_playing = 'n'
         
     else:
-        keep_playing = input('Play again? [y/n]: ').lower()
+        keep_playing = input('Would you like to play again? [y/n]: ').lower()
 
     print()

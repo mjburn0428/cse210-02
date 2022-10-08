@@ -30,8 +30,8 @@ class Deck:
         print("\t\t\t")
         print("\t\t\t")
         if self.score <= 0:
-            print("\t\t\t Your Score = {}".format(self.score))
+            print("\t\t\t Your Score is = {}".format(self.score))
         else:   
-            print("\t\t\t Your Score = {}".format(self.score))
+            print("\t\t\t Your Score is = {}".format(self.score))
           
         print("\t\t\t")

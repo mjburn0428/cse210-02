@@ -14,7 +14,7 @@ class Director:
     
         
         first_card = deck.draw_card()
-        print(f'The card is: {first_card}')
+        print(f'Your drawn card is: {first_card}')
 
         second_card = deck.draw_card()
 
