@@ -11,6 +11,11 @@
 
 2. display function will perform the logic which will prompt for user input, read random value and do conditional check as in userInputCheck
 
+### rules
+1. The player will guess the card number is h or l. And the player will continue play until the game score show 0. 
+
+2. The player can continue playing the game by reply yes or no.
+
 ### To use this script
 Python 3 main.py
 
